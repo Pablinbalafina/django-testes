@@ -1,17 +1,38 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Document</title>
 </head>
 <body>
     
 </body>
-    <h1>HOME</h1>
+    <h1 style="background-color: blueviolet;">HOME</h1>
+    <p class="pipoca">Oiiiiiiiiiiff</p>
+    <p>Me caguei</p>
     <a href="{%url 'contatos'%}">Link para contato</a>
     <br>
     <a href="{%url 'sobre'%}">Link para sobre</a>
+    {% include 'menu.html'%}
+
+    <ol>
+        <li>PLABLO GAY</li>
+        <li>PLABLO HOMOSEXUAL</li>
+        <li>PLABLO GOSTA DE HOMNES</li>
+        <li>PLABLO NÃO GOSTA DE MULHER</li>
+    </ol>
+    
+    <ul>
+        <li>PLABLO GAY</li>
+        <li>PLABLO HOMOSEXUAL</li>
+        <li>PLABLO GOSTA DE HOMNES</li>
+        <li>PLABLO NÃO GOSTA DE MULHER</li>
+    </ul>
 
 </body>
 </html>
